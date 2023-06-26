@@ -83,3 +83,26 @@ Voy con la default
 
 
 ------------     
+
+## Standalone Operation
+
+
+------------
+Demo 01
+
+https://hadoop.apache.org/docs/r1.2.1/single_node_setup.html
+
+    ubuntu@ip-172-31-16-183:~/Big-Data-Tools/hadoop-3.3.5/etc/hadoop$ ls *xml
+    capacity-scheduler.xml  hadoop-policy.xml  hdfs-site.xml    kms-acls.xml  mapred-site.xml
+    core-site.xml           hdfs-rbf-site.xml  httpfs-site.xml  kms-site.xml  yarn-site.xml
+
+    $ mkdir input
+    $ cp conf/*.xml input
+    $ bin/hadoop jar hadoop-examples-*.jar grep input output 'dfs[a-z.]+'
+    $ cat output/*
+
+Demo 02
+https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html#Example%3A+WordCount+v1.0
+
+
+
