@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.javacodegeeks.examples</groupId>
+  <groupId>org.bigdata.sample</groupId>
   <artifactId>wordcount</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -53,7 +53,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>com.javacodegeeks.examples.wordcount.WordCount</mainClass>
+                <mainClass>org.bigdata.sample.WordCount</mainClass>
             </configuration>
         </plugin>
     </plugins>
